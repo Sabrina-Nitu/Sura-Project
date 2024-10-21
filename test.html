@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mood Sura Player</title>
+    <link rel="stylesheet" href="css/styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;500;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div class="container">
+        <h1>Asslamualikum</h1>
+        <p>Select a mood to play a Sura and view the album cover.</p>
+        <div class="album-cover-container">
+            <img id="album-cover" src="image/cover.jpg" alt="Album Cover">
+        </div>
+        <div class="modes">
+            <button class="mood-button" id="morning">Morning</button>
+            <button class="mood-button" id="afternoon">Afternoon</button>
+            <button class="mood-button" id="evening">Evening</button>
+            <button class="mood-button" id="night">Night</button>
+        </div>
+<div class="song-selector">
+    <label for="song-select">Choose a sura:</label>
+    <select id="song-select">
+        <option value="">Select a sura</option>
+    </select>
+</div>
+        <audio id="mood-audio" controls hidden></audio>
+    </div>
+    <script src="js/script.js"></script>
+</body>
+</html>
